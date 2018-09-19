@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Weekly Ad View</title>
+ <!-- Normalize.css, a cross-browser reset file, CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!-- Fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
+</head>
+<body class="container" window.onload = renderAds();> 
+    
+  <!-- header & filter
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+    <div class="top">
+      <section class= "sort"> 
+        <select ng-model="orderList" class="orderList" onchange="sort(this.value)" id="orderList">
+          <option value="start_date">By Date</option>
+          <option value="title" >By Name</option>
+          <option value="offer">By Offer</option>
+        </select>
+      </section> 
+
+      <h2 class="header"> WEEKLY ADS </h2>
+    </div>
+  
+  <!-- Weekly ads
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+  <div class="ads" id="ads"></div>
+ 
+<!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
+

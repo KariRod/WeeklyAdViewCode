@@ -1,0 +1,95 @@
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  width: 360px;
+  background: #5d747c;
+  padding: 5px;
+
+}
+
+.adslayout {
+  display: flex;
+  flex-direction: row;
+  width: 360px;
+  background: linear-gradient(to left, #D3D3D3 30%,#D3D3D3 30%,#efecec 40%,#efecec 100%);
+  align-items: center;
+  border-bottom: 5px solid white; 
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.title{
+	margin-bottom: -8px;
+}
+
+.header {
+	color: #efecec;
+	margin-left: 120px;
+}
+.orderList {	
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 20px;
+	background: transparent;
+	color: #efecec;
+	border: 0;
+
+}
+
+.ads {
+	background-color: #ece8d9;
+	width: 360px;
+	border-bottom: 5px solid #fffdf6; 
+}
+
+.description {
+	font-size: 12px;
+}
+
+.dates {
+	font-size: 11px;
+}
+
+.left{
+	margin-right: 140px;
+}
+
+.offer {
+	width: 100px;
+	position: absolute;
+	color: #efecec;
+	background: #5d747c;
+	border-radius: 5px;
+	border-color: #363434;
+	padding: 5px;
+	margin-left: -100px;
+	margin-top: 30px;
+	font-weight: 700;
+	border: 0px;
+}
+
+button:hover { 
+    background-color: grey;
+}
+
+
+.number-of-product {
+	font-size: 11px;
+	color: #5d747c;
+	font-weight: bold;
+}
+
+
